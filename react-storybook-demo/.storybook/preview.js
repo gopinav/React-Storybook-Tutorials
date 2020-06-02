@@ -2,6 +2,7 @@ import React from 'react'
 import { addDecorator } from '@storybook/react'
 // import '@storybook/addon-console'
 import { withConsole } from '@storybook/addon-console';
+import { withKnobs } from '@storybook/addon-knobs'
 import { ThemeProvider, theme, CSSReset, Box } from '@chakra-ui/core'
 
 addDecorator(story => (
@@ -11,3 +12,4 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+addDecorator(withKnobs)
