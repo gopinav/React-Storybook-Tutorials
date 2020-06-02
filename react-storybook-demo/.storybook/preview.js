@@ -1,5 +1,6 @@
 import React from 'react'
 import { addDecorator } from '@storybook/react'
+import '@storybook/addon-console'
 import { ThemeProvider, theme, CSSReset, Box } from '@chakra-ui/core'
 
 addDecorator(story => (

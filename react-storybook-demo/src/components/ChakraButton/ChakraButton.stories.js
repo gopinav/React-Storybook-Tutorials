@@ -17,3 +17,9 @@ export const Danger = () => (
     Danger
   </Button>
 )
+
+export const Log = () => (
+  <Button variantColor='blue' onClick={() => console.log('Button clicked')}>
+    Log
+  </Button>
+)
