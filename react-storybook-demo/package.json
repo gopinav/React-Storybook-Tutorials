@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-console": "^1.2.1",
     "@storybook/addon-docs": "^5.3.19",
