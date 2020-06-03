@@ -20,13 +20,16 @@ export const Danger = () => (
 )
 
 export const Log = () => (
-  <Button variantColor='blue' onClick={() => console.log('Button clicked')}>
+  <Button
+    variantColor='blue'
+    onClick={() => console.log('Button clicked', process.env.STORYBOOK_THEME)}
+  >
     Log
   </Button>
 )
 
 export const Knobs = () => (
-  <Button variantColor='purple' disabled={boolean("Disabled", false)}>
-    {text("Label", "Button Label")}
+  <Button variantColor='purple' disabled={boolean('Disabled', false)}>
+    {text('Label', 'Button Label')}
   </Button>
 )
